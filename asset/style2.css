@@ -141,6 +141,10 @@ nav ul li a:hover {
     /* background-color: red; */
 }
 
+.about-info {
+    font-style: italic;
+}
+
 .about-logo {
     box-shadow: none;
     margin: 10px;
@@ -503,6 +507,15 @@ footer {
     nav ul li a {
         font-size: 1.3rem;
     }
+
+    .join {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .join a {
+        font-size: 1.6rem;
+    }
     .about-us {
         display: flex;
         flex-direction: column;
@@ -548,7 +561,6 @@ footer {
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
-        max-width: fit-content;
     }
 
     .group-text {
@@ -556,7 +568,7 @@ footer {
         flex-direction: column;
         justify-content: none;
         align-items: center;
-
+        width: 85%
     }
 
     .medal {
@@ -564,5 +576,70 @@ footer {
         align-items: center;
     }
 
+    .footer-text p {
+        font-size: 1.8rem;
+    }
 
+    .footer-logo svg{
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 860px) {
+    .nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        font-size: 1.5rem;
+    }  
+    
+    .logo img {
+        width: auto;
+        height: 85px;
+    }
+
+    .about-text {
+        width: 38rem;
+    }
+
+    .about-text h1 {
+        font-size: 2.8rem ;
+    }
+    
+    .about-text p {
+        font-size: 1.3rem;
+    }
+
+    .information-container{
+        width: auto;
+    }
+    .information {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .information h1{
+        font-size: 1.3rem;
+    }
+
+    .information p {
+        font-size: .8rem;
+    }
+
+    .info-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .info-logo img {
+        width: 3rem;
+        height: 3rem;
+    }
 }
