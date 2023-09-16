@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Selamat datang di Website Pendaftaran PT.Interverse.")
+
+        let name = prompt("Silahkan masukkan nama anda.")
+        let age = prompt("Silahkan masukkan umur anda.")
+        let height = prompt("Silahkan masukkan tinggi badan anda.")
+
+        if (age >= 17, height > 170) {
+            document.write("<h1>Selamat anda telah diterima di perusahaan Interverse!</h1>")
+            document.write("<br>")
+            document.write("Nama: " + name + "<br>Umur: " + age + "<br>Tinggi badan: " + height)
+        }
+        else if (age == '', height == '') {
+            document.write("<h1>404 Error Not Found</h1> \n Interverse Console Log");
+            document.write("<hr>")
+            document.write("PLEASE TRY AGAIN")
+        }
+        else {
+            alert("Maaf, anda belum mencukupi untuk mendaftar di Perusahaan Interverse.")
+        }
+    </script>
+</body>
+</html>

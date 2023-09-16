@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- id hasil -->
+	<div id="hasil"></div>
+
+    <div class="jam-digital-malasngoding">
+        <div class="kotak">
+            <p id="jam"></p>
+        </div>
+        <div class="kotak">
+            <p id="menit"></p>
+        </div>
+        <div class="kotak">
+            <p id="detik"></p>
+        </div>
+
+    <script>
+        let nama = "Ngakak"
+        alert ("Halo kawan " + nama)
+        let nama1 = prompt("Please type your name here")
+        alert ("Hai " + nama1)
+
+        var tanggal = new Date();
+ 
+		document.getElementById("hasil").innerHTML = tanggal;
+
+        window.setTimeout("waktu()", 1000);
+ 
+        let num1 = parseInt(prompt("Masukkan jumlah angka"))
+        let num2 = parseInt(prompt("Masukkan jumlah angka"))
+        hasil = num1 > num2 
+        alert ("Berikut adalah jawabannya " + hasil)
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+    </script>
+
+    <button onclick="alert('Aamiin')">Yang pencet jadi orang sukses</button>
+    <button onclick="confirm('Apakah ingin melanjutkan ke Surga?')">Yang pencet masuk surga</button>
+    
+</body>
+</html>

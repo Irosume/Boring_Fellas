@@ -1,0 +1,388 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+        <div class="nav">
+            <div class="logo">
+                <img src="asset/logoweb.png" alt="logohsr">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#games">Information</a></li>
+                    <li><a href="#member">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <button onclick="returnTop()" id="btnUp" title="Return to the top page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--baseColor);"><path d="M3 19h18a1.002 1.002 0 0 0 .823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 0 0 3 19zm9-12.243L19.092 17H4.908L12 6.757z"></path></svg>
+    </button>
+
+    <!-- ABOUT US -->
+    <div class="main-container">
+        <div class="about-us">
+            <div class="about-logo">
+                <!-- <img src="asset/logo-about.jpg"> -->
+            </div>
+            <div class="about-text">
+                <p class="lettercase">WE ARE</p>
+                <h1>Boring Fellas!</h1>
+                <p>Boring Fellas is an established Gaming Community since 2019 with the purpose to create a humble and friendly community.</p>
+                <button class="join"><a href="">Discord</a></button>
+                <button class="join"><a href="">WhatsApp</a></button>
+            </div>
+        </div>
+        <div id="games" class="pre-title">
+            <h1>Games</h1>
+        </div>
+        <div id="information" class="information-container">
+            <div class="information">
+                <div class="info-logo">
+                    <img src="asset/info-logo.png">
+                </div>
+                <h1>Minecraft</h1>
+                <p>The game that started the legacy of Boring Fellas.</p>
+            </div>
+            <div class="information">
+                <div class="info-logo">
+                    <img src="asset/logo-info_2.png">
+                </div>
+                <h1>Roblox</h1>
+                <p>Recently played among together with group members.</p>
+            </div>
+            <div class="information">
+                <div class="info-logo">
+                    <img src="asset/logo-info_3.png">
+                </div>
+                <h1>osu!</h1>
+                <p>A challenging rythm game that is mastered by the "Master-in-osu!"</p>
+            </div>
+            <div class="information">
+                <div class="info-logo">
+                    <img src="asset/logo-info_4.png">
+                </div>
+                <h1>ML</h1>
+                <p>The game that every member have played at one time.</p>
+            </div>
+        </div>
+
+        <div id="member" class="pre-title">
+            <h1>Member</h1>
+        </div>
+        <div class="group-container"> 
+            <div class="group">
+                <div class="group-text">
+                    <h1>Hanna</h1>
+                    <h2>The leader and founder of Boring Fellas.</h2>     
+                    <p>
+                        A woman with a calm personality, and loves to 
+                        <br> spend her time together with the members.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="fd">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Founder</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                        <div class="medal" id="osu">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Master-In-osu!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-0.jpg">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Vuina</h1>
+                    <h2>The co-founder of Boring Fellas.</h2>
+                    <p>Titled as the big sister of Boring Fellas.
+                        <br>Helping people in troubles and sharing experiences.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="cfd">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Co-Founder</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-1.jpg">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Razel</h1>
+                    <h2>Breeze cold personality.</h2>
+                    <p>A dedicated osu! player until he is satisfied with the results.
+                        <br>A humble and friendly person hiding behind the cold personality.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="adm">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Admin</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                        <div class="medal" id="osu">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Master-In-osu!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-2.png">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Fajar</h1>
+                    <h2>Hardworking and focused guy.</h2>
+                    <p>Spend his time trying to solve whatever problem he has.
+                        <br>The veteran who have stayed since the beginning.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="mem">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Member</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                        <div class="medal" id="mc">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Master-In-Craft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-3.png">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Zunior</h1>
+                    <h2>Energetic Gamer</h2>
+                    <p>The one who is good at games in a second.
+                        <br>Also a veteran who have stayed since the beginning.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="adm">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Admin</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-4.jpg">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Irpan</h1>
+                    <h2>Hololive is my life</h2>
+                    <p>Loves to watch Virtual Youtuber and gaming.
+                        <br> Have a LOT of waifu's collection.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="mem">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Member</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-5.jpg">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Nouval</h1>
+                    <h2>Your goofy boy.</h2>
+                    <p>Goofy.</p>
+                    <div class="medal-container">
+                        <div class="medal" id="adm">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Admin</p>
+                        </div>
+                        <div class="medal" id="vt">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Veteran</p>
+                        </div>
+                        <div class="medal" id="wc">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+                            </div>
+                            <p>Website Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-7.png">
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Jimi</h1>
+                    <h2>That one questionable guy.</h2>
+                    <p>Gamer that enjoys going to a Japanese Events.
+                        <br>A legend who stay playing Blue Archive.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="mem">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Member</p>
+                        </div>
+                        <div class="medal" id="wb">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Weebs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-6.jpg">
+                </div>
+            </div>   
+
+            <div class="group">
+                <div class="group-text">
+                    <h1>Literal Weeb</h1>
+                    <p>Kafka belongs to him and not even a single person could.
+                        <br>Fellow gamer who played Minecraft and Hoyoverse enjoyer.
+                    </p>
+                    <div class="medal-container">
+                        <div class="medal" id="mem">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                            </div>
+                            <p>Member</p>
+                        </div>
+                        <div class="medal" id="wb">
+                            <div class="medal-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 2h-4v4.059a8.946 8.946 0 0 1 4 1.459V2zm-6 0H7v5.518a8.946 8.946 0 0 1 4-1.459V2zm1 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm-1.225-8.519L12 11l1.225 2.481 2.738.397-1.981 1.932.468 2.727L12 17.25l-2.449 1.287.468-2.727-1.981-1.932 2.737-.397z"></path></svg>
+                            </div>
+                            <p>Weebs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-img">
+                    <img src="asset/about-8.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">
+            <p>Interested in joining us?</p>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <div class="footer-logo">
+            <span><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a></span>
+            <span><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z"></path></svg></a></span>
+            <span><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg></a></span>
+        </div>
+        <div class="footer-copyright">
+            <p>© BORING FELLAS</p>
+        </div>
+    </footer>
+    <script>
+        // SCROLL TO UP
+        let scrollup = document.getElementById('btnUp');
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if(document.body.scrollTop > 100 || document.documentElement.scrolltop > 100) {
+                scrollup.style.display = "block"
+            } else {
+                scrollup.style.display = "none"
+            }
+        }
+
+        function returnTop() {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
