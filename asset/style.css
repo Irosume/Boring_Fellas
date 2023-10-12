@@ -24,6 +24,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     /* font-family: 'Roboto'; */
 }
 
@@ -62,7 +63,7 @@ body {
 
 .calendar-container:hover .month{
     background: #322646;
-
+    
 }
 
 .calendar-container:hover .zoom h1{
@@ -96,8 +97,8 @@ body {
 
 .month-trans:hover {
     opacity: 1; */
-.weekdays {
-    padding: 0;
+    .weekdays {
+        padding: 0;
     border-bottom: solid 5px rgb(155, 155, 155);
 }
 
@@ -131,9 +132,9 @@ body {
     align-content: center;
     justify-content: space-between;
     /* background: var(--thirdColor); */
-
+    
     /* height: 50px; */
-   
+    
 }
 
 .days {
@@ -143,10 +144,9 @@ body {
     justify-items: center;
     align-content: center;
     text-align: center;
-    border-radius: 0 0 15px 15px;
     padding: 20px 50px;
     background: var(--secondaryBaseColor);
-   
+    
 }
 
 .days .dayStyle {
@@ -158,3 +158,52 @@ body {
     font-size: 1.3rem;
 }
 
+.event-container {
+    background: var(--secondaryBaseColor);
+    width: auto;
+    height: 20rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.event-title {
+    display: flex;
+    width: auto;
+    padding: 10px;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(55, 55, 55);
+    border: solid 5px var(--secondaryBaseColor);
+    color: var(--baseColor);
+}
+
+.events {
+    margin: 10px;
+    width: auto;
+    height: auto;
+
+}
+
+.events ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.events-li {
+    background: rgba(55, 55, 55);
+    box-shadow: rgba(0, 0, 0) 5px 5px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 0 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.events-li:hover {
+    background: #322646;
+}
+
+.events-li.active {
+    text-decoration: line-through;
+    color: rgb(150, 150, 150);
+}
