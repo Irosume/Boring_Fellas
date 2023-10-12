@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Selamat datang di Menu Interverse.")
+        let PilihMenu = prompt("Silahkan Pilih Menu: \n 1.Cek Pulsa \n 2.Cek Kuota \n 3.Isi Pulsa & Kuota")
+
+        if (PilihMenu == '1') {
+            let yakin = confirm("Pulsa anda tersisa: Rp.56,450. \nBerlaku hingga 30 September 2023 Pukul 03.00.")
+            if (yakin) { 
+                document.location.reload(true)   
+            }
+            else {
+                document.location.reload(false)
+            }
+        }
+        else if (PilihMenu == '2') {
+            let yakin = confirm("Kuota anda tersisa: 56 TB. \nBerlaku hingga 1 September 2023")
+            if (yakin) { 
+                document.location.reload(true)   
+            }
+            else {
+                document.location.reload(false)
+            }
+        }
+        else if (PilihMenu == '3') {
+            let pulKot = prompt("1.Pulsa 50 Rb \n2.Paketan 10 GB")
+
+            if (pulKot == 1) {
+                alert("Pulsa anda telah terisi 50 Rb (Bonus Pulsa SMS + Data 25 Rb)")
+            }
+            else if (pulKot == 2) {
+                alert("Paketan anda telah terisi 10 GB (Paketan Malam 01-07)")
+            }
+
+            alert("Terimakasih telah menggunakan Interverse.")
+        }
+        else {
+            confirm("Maaf, Menu tidak dapat ditemukan.")
+            if (yakin) { 
+                document.location.reload(true)   
+            }
+            else {
+                document.location.reload(false)
+            }
+        }
+    </script>
+</body>
+</html>

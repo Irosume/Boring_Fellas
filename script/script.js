@@ -14,6 +14,14 @@ let days = "";
     // } else if(date == )
 }
 
+const eventsli = document.querySelectorAll(".events-li")
+
+for(let i = 0; i < eventsli.length; i++){    
+    eventsli[i].addEventListener("click", () => {
+        eventsli[i].classList.toggle("active")
+    })
+}
+
 dayContainer.innerHTML = days;
 
 // dayContainer.innerHTML = days;

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var jawab = prompt("Pilih menu yang ada: \n1.Cek Pulsa \n2.Cek Kuota \n3.Isi Pulsa & Kuota");
+        var hadiah = "";
+        
+        switch(jawab){
+            case "1":
+                hadiah = "Pulsa anda tersisa Rp.75,000 \nBerlaku hingga 5 Agustus 2024.";
+                break;
+            case "2":
+                hadiah = "Kuota anda tersisa: \n1.Kuota Utama: 78 MB \n2.Kuota #Nightcore (01-07): 90 GB ";
+                break;
+            case "3":
+                hadiah = "Pulsa dan Kuota anda telah terisi.";
+                break;
+            default:
+                document.write("<h1>404 Error Not Found</h1> \n Interverse Console Log");
+                document.write("<hr>")
+        }
+
+        if(hadiah === ""){
+            document.write("<p>Maaf, silahkan ulangi kembali.</p>");
+        } else {
+            alert(hadiah);
+        }
+
+    </script>
+</body>
+</html>
