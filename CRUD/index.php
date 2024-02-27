@@ -9,6 +9,10 @@ if ($pesan == "gagal") {
     echo "<div class='alert alert-danger mt-5' role='alert'>
     Login gagal! Coba lagi.
   </div>'";
+} elseif ($pesam == "passSalah") {
+    echo "<div class='alert alert-danger mt-5' role='alert'>
+    Password Salah!
+  </div>'";
 }
 ?>
 

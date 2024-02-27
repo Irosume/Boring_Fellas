@@ -3,12 +3,13 @@ require "connection.php";
 
 session_start();
 
-if ($_SESSION['level'] == ""){
+if ($_SESSION['level'] == "") {
     header("location:error.php");
 }
 ?>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,16 +31,16 @@ if ($_SESSION['level'] == ""){
             text-align: center;
             flex-direction: column;
             background: white;
-            width: 30rem;
-            height: 40rem;
+            width: 45rem;
+            height: 55rem;
             padding: 10px;
         }
 
         #formulir {
             display: flex;
             flex-direction: column;
-            height: 30rem;
-            width: 15rem;
+            height: 40rem;
+            width: 35rem;
             padding: 5px;
             margin: 0;
             gap: 10px;
@@ -52,7 +53,7 @@ if ($_SESSION['level'] == ""){
             align-self: center;
             border-radius: 5px;
             margin: 5px;
-            width: 15rem;
+            width: 35rem;
             height: 2rem;
         }
 
@@ -60,6 +61,7 @@ if ($_SESSION['level'] == ""){
             display: flex;
             align-items: flex-start;
         }
+
         #submit {
             width: 5rem;
             justify-content: center;
@@ -67,16 +69,19 @@ if ($_SESSION['level'] == ""){
         }
     </style>
 </head>
+
 <body>
     <div class="form-container">
         <h1>Daftarkan Alumni</h1>
         <form action="create-function-alumni.php" id="formulir" method="post" enctype="multipart/form-data">
             <label for="nama">Nama Alumni</label>
-            <input type="text" id="nama_alumni" name="nama_alumni"  placeholder="Nama Alumni" autocomplete="off">
+            <input type="text" id="nama_alumni" name="nama_alumni" placeholder="Nama Alumni" autocomplete="off">
             <label for="nisn">NISN</label>
             <input type="text" id="nisn" name="nisn" placeholder="NISN" autocomplete="off">
-            <label for="date">Tanggal Lahir</label>
-            <input type="text" id="date" name="date" placeholder="DD-MM-YYYY" autocomplete="off">
+            <label for="date">Tempat Tanggal Lahir</label>
+            <input type="text" id="date" name="date" placeholder="Tempat Lahir, DD-MM-YYYY" autocomplete="off">
+            <label for="date">Alamat</label>
+            <input type="text" id="alamat" name="alamat" placeholder="Alamat" autocomplete="off">
             <label for="date">Jurusan</label>
             <select name="jurusan" id="jurusan">
                 <option value="1">Akuntansi</option>
@@ -93,15 +98,17 @@ if ($_SESSION['level'] == ""){
             <input type="text" id="sosmed" name="sosmed" placeholder="Sosial Media (Instagram)" autocomplete="off">
             <label for="date">Prestasi</label>
             <input type="text" id="prestasi" name="prestasi" placeholder="Prestasi" autocomplete="off">
-            <!-- <label for="date">Aktivitas</label>
+            <label for="date">Aktivitas</label>
             <select name="aktivitas" id="aktivitas">
                 <option value="1">Bekerja</option>
                 <option value="2">Kuliah</option>
-            </select> -->
+                <option value="2">Tidak Ada</option>
+            </select>
             <input type="file" id="gambar" name="gambar">
             <button id="submit" type="submit" name="submit">Daftar!</button>
         </form>
         <button class="return" onclick="location.href = 'alumni.php';">Return</button>
     </div>
 </body>
+
 </html>

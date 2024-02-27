@@ -39,7 +39,7 @@ if(isset($_POST["submit"])):
 		$_SESSION['username'] = $username;
 		$_SESSION['level'] = "moderator";
 		// alihkan ke halaman dashboard pegawai
-		header("location:read_mod.php");
+		header("location:alumni.php");
 		
 		// cek jika user login sebagai pengurus
 	}else if($data['level']=="visitor"){
@@ -47,7 +47,7 @@ if(isset($_POST["submit"])):
 		$_SESSION['username'] = $username;
 		$_SESSION['level'] = "visitor";
 		// alihkan ke halaman dashboard pengurus
-		header("location:read_visitor.php");
+		header("location:homepage.php");
 		
 	}else{
 		
